@@ -8,6 +8,10 @@ const myData = {
     school_email: 'shee.basiga.swu@phinmaed.com',
 };
 
+app.get('/', (req, res) => {
+    res.send('Hello!This is my server:>');
+});
+
 app.get('/firstname', (req, res) => {
     res.send(myData.first_name.toUpperCase());
 });
